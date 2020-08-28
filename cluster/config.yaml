@@ -1,0 +1,23 @@
+proxy:
+    secretToken: "9dea4241f77aafba74877ec3ff46865cf641232d5f543af090e0400e14de43c7"
+singleuser:
+    defaultUrl: "/lab"
+    image:
+        name: samueljackson/sciml-workshop
+        tag: v1
+    lifecycleHooks:
+        postStart:
+            exec:
+                command:
+                        - "sh"
+                        - "-c"
+                        - >
+                            cp -R /tmp/course_1.0/ /home/jovyan/course_1.0;
+    storage:
+        extraVolumes:
+            - name: sciml-workshop-data
+              persistentVolumeClaim:
+                  claimName: sciml-workshop-data-pvc
+        extraVolumeMounts:
+            - name: sciml-workshop-data
+              mountPath: /home/jovyan/sciml-workshop-data
