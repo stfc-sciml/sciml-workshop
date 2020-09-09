@@ -15,3 +15,11 @@ Practical notebooks for the SciML workshop
 * At the **start** of the session make sure you are running a GPU. NB - if yo ugo back and change this the notebook will have to restart.
     * Runtime -> Runtime Type -> Hardware Accelerator = GPU
 * If you wish to keep a copy with saved changes:
+
+
+## Save the notebook
+Once you have edited a notebook, you may want to save your own copy. There are two options:
+* Download it to your computer: 
+   * File -> Download .ipynb
+* Save it to your Google Drive:
+   * File -> Save a copy in Drive
