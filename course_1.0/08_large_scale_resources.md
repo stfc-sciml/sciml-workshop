@@ -1,4 +1,4 @@
-# PEARL Workshop
+# Large Scale Resources Workshop
 
 ## Accessing PEARL
 
