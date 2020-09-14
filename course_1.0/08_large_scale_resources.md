@@ -161,7 +161,7 @@ sbatch simple-singularity-job.job
 
 - Exercise 1:
   - There is a script called `train-fmnist.py`. This trains the same dense model from the first lesson on neural networks on the fashion MNIST dataset.
-  - Write a batch script to run this with the tensorflow_latest-gpu.sif container.
+  - Write a batch script to run this with the `tensorflow_latest-gpu.sif` container.
   - Submit the job and check the progress
 
 - Exercise 2:
