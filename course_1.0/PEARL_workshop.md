@@ -74,3 +74,42 @@ singularity build --fakeroot lolcow.sif lolcow.def
 ```bash
 singularity run lolcow.sif 
 ```
+
+## SLURM
+
+```bash
+#show all job queues
+sinfo 
+#show all pending or running jobs
+squeue
+#show pending/running jobs for user pearl008
+squeue –u pearl008
+```
+
+```bash
+srun --gres=gpu:1 --pty bash
+```
+
+```bash
+#!/bin/bash
+#SBATCH --gres=gpu:1
+#SBATCH --job-name ="ML Job"
+#SBATCH --time=0-00:10:00
+#SBATCH --mem=1GB
+
+nvidia-smi
+```
+
+```bash
+sbatch simple-job.job
+```
+
+```bash
+#!/bin/bash
+#SBATCH --gres=gpu:1
+singularity exec --nv pytorch_20.06-py3.sif nivida-smi
+```
+
+```bash
+sbatch simple-singularity-job.job
+```
