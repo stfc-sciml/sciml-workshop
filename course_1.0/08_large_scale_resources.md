@@ -20,7 +20,7 @@ ssh -i tmp100 tmp100@ui.pearl.scd.stfc.ac.uk
 Your temporary accounts will close automatically on Wednesday 23rd of September.
 
 ## Viewing Files
-PEARL currently only provides a command line interface. To open and edit files in this tutorial you will need to use a command line text editor. Both `vim` and `nano` are installed on the system.
+PEARL currently only provides a command line interface. To open and edit files in this tutorial you will need to use a command line text editor. Both `vim` and `nano` are installed on the system. A vim tutorial can be found [here](https://vim.fandom.com/wiki/Tutorial).
 
 ## Singularity
 
