@@ -153,7 +153,7 @@ You can run any arbitrary bash command in your job script. For example, we can r
 #!/bin/bash
 #SBATCH --reservation=Diamond2020
 #SBATCH --gres=gpu:1
-singularity exec --nv pytorch_20.06-py3.sif nivida-smi
+singularity exec --nv tensorflow_latest-gpu.sif nivida-smi
 ```
 
 We can then submit this job with the following command:
