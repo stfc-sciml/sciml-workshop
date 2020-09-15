@@ -3,11 +3,13 @@
 ## Accessing PEARL
 
 ### On Windows
+
  - Download [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
  - Follow [these instructions](https://devops.ionos.com/tutorials/use-ssh-keys-with-putty-on-windows/#install-putty-and-puttygen) to setup PuTTY. Specifically the parts:
    - Install PuTTY And PuTTYgen
    - Use Existing Public And Private Keys
-  
+     - When importing the private key you'll need to open the `.ppk` file. e.g. `tmp100.ppk`
+   - When you are prompted for the password, you will need to enter the phrase in the `passphrase.txt` text file.
   
 ### On Linux
 
@@ -16,6 +18,7 @@ Assuming your username is `tmp100` and your key file is called `key_file.txt` yo
 ```bash
 ssh -i tmp100 tmp100@ui.pearl.scd.stfc.ac.uk
 ```
+When you are prompted for the password, you will need to enter the phrase in the `passphrase.txt` text file.
 
 Your temporary accounts will close automatically on Wednesday 23rd of September.
 
