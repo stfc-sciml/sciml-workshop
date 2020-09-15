@@ -17,6 +17,8 @@ Assuming your username is `tmp100` and your key file is called `key_file.txt` yo
 ssh -i tmp100 tmp100@ui.pearl.scd.stfc.ac.uk
 ```
 
+Your temporary accounts will close automatically on Wednesday 23rd of September.
+
 ## Singularity
 
 ### Pulling Images
