@@ -12,7 +12,7 @@ You will recieve three files:
  - Download [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
  - Install PuTTY And PuTTYgen
  - [Follow these instructions on connecting to a server using a private key](https://devops.ionos.com/tutorials/use-ssh-keys-with-putty-on-windows/#connect-to-server-with-private-key)
-     - The address you need to enter under session is `tmp100@ui.pearl.scd.stfc.ac.uk` (assuming `tmp100` is you private key name).
+     - The address you need to enter under session is `tmp100@ui.pearl.scd.stfc.ac.uk` (assuming `tmp100` is your private key name).
      - When importing the private key you'll need to open the `.ppk` file. e.g. `tmp100.ppk`
  - After you open the connection when you are prompted for the password, you will need to enter the phrase in the `passphrase.txt` text file.
   
