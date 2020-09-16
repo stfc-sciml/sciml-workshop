@@ -3,7 +3,7 @@
 ## Accessing PEARL
 
 You will recieve three files:
- - `tmpXXX.ppk` is the private key file for ssh if you are on a Window machine. 
+ - `tmpXXX.ppk` is the private key file for ssh if you are on a Windows machine. 
  - `tmpXXX` is the private key file for ssh if you are on a Mac or Linux machine.
  - `passphrase.txt` is the password for your ssh private key which you will need to enter when prompted.
  
