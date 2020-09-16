@@ -2,6 +2,11 @@
 
 ## Accessing PEARL
 
+You will recieve three files:
+ - `tmpXXX` is the private key file for ssh if you are on a Window machine. 
+ - `tmpXXX` is the private key file for ssh if you are on a Mac or Linux machine.
+ - `passphrase.txt` is the password for your ssh private key which you will need to enter when prompted.
+ 
 ### On Windows
 
  - Download [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
