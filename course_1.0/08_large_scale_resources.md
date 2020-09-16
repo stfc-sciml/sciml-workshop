@@ -18,7 +18,7 @@ You will recieve three files:
   
 ### On Mac/Linux
 
-Assuming your username is `tmp100` and the your key file is called `tmp100` you can use the following command to ssh into the PEARL system.
+Assuming your username is `tmp100` and that your key file is called `tmp100` you can use the following command to ssh into the PEARL system.
 
 ```bash
 ssh -i tmp100 tmp100@ui.pearl.scd.stfc.ac.uk
