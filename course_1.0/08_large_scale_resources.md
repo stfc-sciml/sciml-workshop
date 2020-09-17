@@ -2,7 +2,7 @@
 
 ## Accessing PEARL
 
-You will recieve three files:
+You will receive three files:
  - `tmpXXX.ppk` is the private key file for ssh if you are on a Windows machine. 
  - `tmpXXX` is the private key file for ssh if you are on a Mac or Linux machine.
  - `passphrase.txt` is the password for your ssh private key which you will need to enter when prompted.
@@ -34,7 +34,7 @@ ssh -i tmp100 tmp100@ui.pearl.scd.stfc.ac.uk
 ```
 When you are prompted for the password, you will need to enter the phrase in the `passphrase.txt` text file.
 
-Your temporary accounts will close automatically on Wednesday 23rd of September. If you wish to apply for a permanent accout you can sign up [here](https://www.turing.ac.uk/research/asg/pearl).
+Your temporary accounts will close automatically on Wednesday 23rd of September. If you wish to apply for a permanent account you can sign up [here](https://www.turing.ac.uk/research/asg/pearl).
 
 ## Viewing Files
 PEARL currently only provides a command line interface. To open and edit files in this tutorial you will need to use a command line text editor. Both `vim` and `nano` are installed on the system. A vim tutorial can be found [here](https://vim.fandom.com/wiki/Tutorial).
@@ -83,7 +83,7 @@ There are many, many prepackaged images out there, but what do we do if we want 
 
 In this simple example we create a very minimal image that has a couple of additional applications packaged into it.
 
- - `Boostrap:`: where to get the base image from. Common options are:
+ - `BootStrap:`: where to get the base image from. Common options are:
    - `library`: the singularity container repos
    - `docker`: a docker image from docker hub or elsewhere
    - `localimage`: a singularity image on your machine
@@ -107,7 +107,7 @@ From: ubuntu:16.04
 %runscript fortune | cowsay | lolcat
 ```
 
-To build the image we use the `build` command. The first argument is the name of the output image file. The second argument is the buildscript definition file. The `--fakeroot` option is required to 
+To build the image we use the `build` command. The first argument is the name of the output image file. The second argument is the build script definition file. The `--fakeroot` option is required to 
 
 ```bash
 singularity build --fakeroot lolcow.sif lolcow.def
@@ -135,17 +135,17 @@ sacct
 squeue –u pearl008
 ```
 
-We can run an interactive shell with the following command. This will allocated a single GPU resource on the PEARL system and provide a bash prompt. Note that the `--reservation=Diamond2020` is only required during the workshop.
+We can run an interactive shell with the following command. This will allocate a single GPU resource on the PEARL system and provide a bash prompt. Note that the `--reservation=Diamond2020` is only required during the workshop.
 
 ```bash
 srun --gres=gpu:1 --reservation=Diamond2020 --pty bash 
 ```
 
-An example of a very basic batch script. Each of the `#SBATCH` lines sets a different option in SLURM. Again, as above, the `--reservation=Diamond2020` is only required during the workshop. Each of the options are as follows:
+An example of a very basic batch script. Each of the `#SBATCH` lines set an option in SLURM. Again, as above, the `--reservation=Diamond2020` is only required during the workshop. Each of the options are as follows:
 
  - `gres`: set the generic resources for this job. Here we're specifying we want one GPU.
  - `job-name`: set the display name of the job. This will be visible in the public queue.
- - `time`: set the estimated maximum time of the job. Jobs that run beyond this value will be kill automatically.
+ - `time`: set the estimated maximum time of the job. Jobs that run beyond this value will be killed automatically.
  - `mem`: set the required CPU RAM for the job. On the DGX system you have up to 1.5TB of shared RAM available. But you will only have 16GB on GPU RAM per GPU.
 
 ```bash
@@ -170,7 +170,7 @@ You can run any arbitrary bash command in your job script. For example, we can r
 #!/bin/bash
 #SBATCH --reservation=Diamond2020
 #SBATCH --gres=gpu:1
-singularity exec --nv tensorflow_latest-gpu.sif nivida-smi
+singularity exec --nv tensorflow_latest-gpu.sif nvidia-smi
 ```
 
 We can then submit this job with the following command:
@@ -190,3 +190,5 @@ sbatch simple-singularity-job.job
   - Create a script for the autoencoder example from the autoencoder practical
   - Write a batch script to run this with the `tensorflow_latest-gpu.sif` container.
   - Submit the job and check it runs
+
+
