@@ -34,7 +34,7 @@ ssh -i tmp100 tmp100@ui.pearl.scd.stfc.ac.uk
 ```
 When you are prompted for the password, you will need to enter the phrase in the `passphrase.txt` text file.
 
-Your temporary accounts will close automatically on Wednesday 23rd of September. If you wish to apply for a permenant accout you can sign up [here](https://www.turing.ac.uk/research/asg/pearl).
+Your temporary accounts will close automatically on Wednesday 23rd of September. If you wish to apply for a permanent accout you can sign up [here](https://www.turing.ac.uk/research/asg/pearl).
 
 ## Viewing Files
 PEARL currently only provides a command line interface. To open and edit files in this tutorial you will need to use a command line text editor. Both `vim` and `nano` are installed on the system. A vim tutorial can be found [here](https://vim.fandom.com/wiki/Tutorial).
