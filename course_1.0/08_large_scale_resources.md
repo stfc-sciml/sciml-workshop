@@ -7,6 +7,7 @@ You will recieve three files:
  - `tmpXXX` is the private key file for ssh if you are on a Mac or Linux machine.
  - `passphrase.txt` is the password for your ssh private key which you will need to enter when prompted.
  
+
 ### On Windows
 
  - Download [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html).
@@ -19,6 +20,14 @@ You will recieve three files:
 ### On Mac/Linux
 
 Assuming your username is `tmp100` and that your key file is called `tmp100` you can use the following command to ssh into the PEARL system.
+
+You'll need to change the permissions of the key to enable it to work correctly on unix. To change this you can simply run:
+
+```bash
+chmod 700 tmp100
+```
+
+Once you have changed permissions. You can ssh as normal:
 
 ```bash
 ssh -i tmp100 tmp100@ui.pearl.scd.stfc.ac.uk
