@@ -4,13 +4,13 @@ Practical notebooks for the SciML workshop
 ## STFC Cloud
 ### Directions for setup
 
-* Go to the workshop Jupyter lab server http://130.246.214.99/
+* Go to the workshop Jupyter lab server https://sciml-workshop.stfc.ac.uk/
 * Login with your STFC Federal ID and password.
 * Leave the `notebook type` and `resources` options set as default.
 * Click start
 * Wait for 2-3 minutes for your virtual machine to start
    * Note: Be patient. This takes several minutes, but you should only have to do this once for the duration of the workshop. 
-* Once started your VM will be available at `http://130.246.214.99/user/{your-fed-id}/lab?` for the duration of the workshop.
+* Once started your VM will be available at `https://sciml-workshop.stfc.ac.uk//user/{your-fed-id}/lab?` for the duration of the workshop.
 
 ## Google Colab
 ### Directions for setup
