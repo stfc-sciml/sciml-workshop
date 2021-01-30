@@ -123,10 +123,4 @@ dmypy.json
 .pyre/
 *.swp
 
-ml-dms/data
-ml-clouds/data
-ml-em-denoise/data
-*.simg
-*.h5
-
-data
+Sciml-workshop-data/
