@@ -135,13 +135,13 @@ sacct
 squeue –u pearl008
 ```
 
-We can run an interactive shell with the following command. This will allocate a single GPU resource on the PEARL system and provide a bash prompt. Note that the `--reservation=Diamond2020` is only required during the workshop.
+We can run an interactive shell with the following command. This will allocate a single GPU resource on the PEARL system and provide a bash prompt. Note that the `--reservation=training_22` is only required during the workshop.
 
 ```bash
-srun --gres=gpu:1 --reservation=Diamond2020 --pty bash 
+srun --gres=gpu:1 --reservation=training_22 --pty bash 
 ```
 
-An example of a very basic batch script. Each of the `#SBATCH` lines set an option in SLURM. Again, as above, the `--reservation=Diamond2020` is only required during the workshop. Each of the options are as follows:
+An example of a very basic batch script. Each of the `#SBATCH` lines set an option in SLURM. Again, as above, the `--reservation=training_22` is only required during the workshop. Each of the options are as follows:
 
  - `gres`: set the generic resources for this job. Here we're specifying we want one GPU.
  - `job-name`: set the display name of the job. This will be visible in the public queue.
@@ -150,7 +150,7 @@ An example of a very basic batch script. Each of the `#SBATCH` lines set an opti
 
 ```bash
 #!/bin/bash
-#SBATCH --reservation=Diamond2020
+#SBATCH --reservation=training_22
 #SBATCH --gres=gpu:1
 #SBATCH --job-name ="ML Job"
 #SBATCH --time=0-00:10:00
@@ -168,7 +168,7 @@ You can run any arbitrary bash command in your job script. For example, we can r
 
 ```bash
 #!/bin/bash
-#SBATCH --reservation=Diamond2020
+#SBATCH --reservation=training_22
 #SBATCH --gres=gpu:1
 singularity exec --nv tensorflow_latest-gpu.sif nvidia-smi
 ```
