@@ -26,12 +26,12 @@ Practical notebooks for the SciML workshop
 * Enter your supplied username (sciml-XX) and a password of your choice.
 * Click "Create User"
 * Login with your username and password
-* On the server options page choose "SciML GPU environment"
+* If prompted, on the server options page choose "SciML GPU environment"
 * Click "Start"
 * Wait a minute or two for your environment to load.
 
 ## Authors
-Keith Butler, Kuangdai Leng, Sam Jackson, Jaehoon Cha, Susmita Basak, Jeyan Thiyagalingam
+Keith Butler, Kuangdai Leng, Sam Jackson, Jaehoon Cha, Susmita Basak, Yeung Siu-Lun, Jeyan Thiyagalingam
 
 *Scientific Machine Learning (SciML) Group, Scientific Computing Department, Science and Technology Facilities Council* 
 
