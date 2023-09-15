@@ -23,7 +23,7 @@ Practical notebooks for the SciML workshop
 
 * Go to SCD Cloud's JupyterHub [https://training.jupyter.stfc.ac.uk](https://training.jupyter.stfc.ac.uk)
 * Click on the "sign-up"
-* Enter your supplied username (sciml-XX) and a password of your choice.
+* Enter your supplied username (sciml-workshop-XX) and a password of your choice.
 * Click "Create User"
 * Login with your username and password
 * If prompted, on the server options page choose "SciML GPU environment"
