@@ -30,10 +30,26 @@ Practical notebooks for the SciML workshop
 * Click "Start"
 * Wait a minute or two for your environment to load.
 
-## Authors
+## Credits
 Keith Butler, Kuangdai Leng, Sam Jackson, Jaehoon Cha, Susmita Basak, Yeung Siu-Lun, Margaret Duff, Jeyan Thiyagalingam
 
 *Scientific Machine Learning (SciML) Group, Scientific Computing Department, Science and Technology Facilities Council* 
+
+
+#### Authors of modules
+
+* CLASSICAL: Keith Butler, Kuangdai Leng, Sam Jackson
+* DNN: Keith Butler, Kuangdai Leng
+* CNN: Keith Butler, Kuangdai Leng
+* LSTM: Keith Butler, Kuangdai Leng
+* AE: Kuangdai Leng
+* VAE: Kuangdai Leng
+* GAN: Kuangdai Leng
+* REINFORCE: Yeung Siu-Lun
+* DEBUGGING: Keith Butler
+* LARGE-SCALE: Sam Jackson
+
+#### Thanks to
 
 Richard Regan, Clare Jenner, Mark Wilkinson
 
