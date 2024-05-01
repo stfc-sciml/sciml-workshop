@@ -40,7 +40,7 @@ Keith Butler, Kuangdai Leng, Sam Jackson, Jaehoon Cha, Susmita Basak, Yeung Siu-
 
 * CLASSICAL: Keith Butler, Kuangdai Leng, Sam Jackson
 * DNN: Keith Butler, Kuangdai Leng
-* CNN: Keith Butler, Kuangdai Leng
+* CNN: Keith Butler, Kuangdai Leng, Susmita Basak
 * LSTM: Keith Butler, Kuangdai Leng
 * AE: Kuangdai Leng
 * VAE: Kuangdai Leng
